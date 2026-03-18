@@ -1,0 +1,22 @@
+{
+  "name": "ollama-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Ollama integration",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "ollama-mcp-server": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

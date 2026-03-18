@@ -1,0 +1,18 @@
+{
+  "apiConfiguration": {
+    "apiProvider": "ollama",
+    "ollamaModelId": "codellama",
+    "ollamaBaseUrl": "http://localhost:11434",
+    "temperature": 0.7
+  },
+  "autoApprovalSettings": {
+    "enabled": true,
+    "actions": {
+      "readFiles": true,
+      "editFiles": true,
+      "executeCommands": false,
+      "browserActions": false,
+      "useMcpServers": true
+    }
+  }
+}

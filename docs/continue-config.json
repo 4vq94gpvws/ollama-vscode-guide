@@ -1,0 +1,95 @@
+{
+  "models": [
+    {
+      "title": "Ollama - Llama 2",
+      "provider": "ollama",
+      "model": "llama2",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Ollama - Mistral",
+      "provider": "ollama",
+      "model": "mistral",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Ollama - CodeLlama",
+      "provider": "ollama",
+      "model": "codellama",
+      "apiBase": "http://localhost:11434"
+    },
+    {
+      "title": "Ollama - Custom Proxy",
+      "provider": "openai",
+      "model": "llama2",
+      "apiKey": "dummy-key",
+      "apiBase": "http://localhost:3000/v1"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Tab Autocomplete",
+    "provider": "ollama",
+    "model": "codellama:7b-code",
+    "apiBase": "http://localhost:11434"
+  },
+  "customCommands": [
+    {
+      "name": "test",
+      "prompt": "Write a comprehensive set of unit tests for the selected code. Use the appropriate testing framework for the language.",
+      "description": "Write unit tests for selected code"
+    },
+    {
+      "name": "explain",
+      "prompt": "Explain the selected code in detail. Break down what it does, why it does it, and any potential issues.",
+      "description": "Explain selected code"
+    }
+  ],
+  "contextProviders": [
+    {
+      "name": "code",
+      "params": {}
+    },
+    {
+      "name": "docs",
+      "params": {}
+    },
+    {
+      "name": "diff",
+      "params": {}
+    },
+    {
+      "name": "terminal",
+      "params": {}
+    },
+    {
+      "name": "problems",
+      "params": {}
+    },
+    {
+      "name": "folder",
+      "params": {}
+    },
+    {
+      "name": "codebase",
+      "params": {}
+    }
+  ],
+  "slashCommands": [
+    {
+      "name": "edit",
+      "description": "Edit selected code"
+    },
+    {
+      "name": "comment",
+      "description": "Add comments to selected code"
+    },
+    {
+      "name": "share",
+      "description": "Export conversation as markdown"
+    },
+    {
+      "name": "commit",
+      "description": "Generate a commit message"
+    }
+  ]
+}
